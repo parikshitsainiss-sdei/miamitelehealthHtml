@@ -2,6 +2,72 @@ body {
   font-family: "Century Gothic", sans-serif !important;
 }
 
+.btn-main {
+  background-color: #70a5bf !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  padding: 8px 0 !important;
+}
+.btn-main:hover {
+  opacity: 0.9;
+}
+.btn-main:focus {
+  box-shadow: none !important;
+}
+
+.btn-outline {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  border: 1px solid #000000 !important;
+  padding: 8px 0 !important;
+}
+.btn-outline:hover {
+  opacity: 0.9;
+}
+.btn-outline:focus {
+  box-shadow: none !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.form-check-input:checked {
+  background-color: #70a5bf !important;
+  border-color: #70a5bf !important;
+}
+
+.stepField input[type=text],
+.stepField input[type=password],
+.stepField input[type=email],
+.stepField input[type=date] {
+  margin: 5px 0 15px !important;
+  font-weight: 500;
+}
+.stepField input[type=text]:focus,
+.stepField input[type=password]:focus,
+.stepField input[type=email]:focus,
+.stepField input[type=date]:focus {
+  box-shadow: none !important;
+}
+.stepField label {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.stepField label i {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #70a5bf;
+  border: 1px solid #70a5bf;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .authPage {
   height: 100%;
 }
@@ -80,15 +146,82 @@ body {
   background-color: #70a5bf;
   z-index: -1;
 }
-.authPage .loginData .btn-main {
-  background-color: #70a5bf;
-  color: #ffffff;
-  font-weight: 500;
-  padding: 8px 0;
+
+.addtocart .content {
+  padding: 50px 0;
+  max-width: 420px;
+  margin: auto;
 }
-.authPage .loginData .btn-outline {
+.addtocart .content h4 {
   color: #000000;
-  font-weight: 500;
-  border: 1px solid #000000;
-  padding: 8px 0;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+.addtocart .content h4 a {
+  color: #70a5bf;
+}
+.addtocart .content h1 {
+  font-size: 28px;
+  color: #70a5bf;
+  font-weight: 600;
+  text-align: center;
+}
+.addtocart .content p {
+  color: #000000;
+}
+.addtocart .content p span {
+  font-weight: 600;
+}
+.addtocart .content .sponcers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.addtocart .content .designatedDoctor .drProfile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+.addtocart .content .designatedDoctor .drProfile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.addtocart .content .designatedDoctor p {
+  color: #707070;
+}
+.addtocart .content .agreement {
+  font-size: 14px;
+  text-align: center;
+}
+.addtocart .content .resend {
+  display: flex;
+  justify-content: space-between;
+}
+.addtocart .content .resend a {
+  color: #70a5bf;
+}
+.addtocart .content .instructions p {
+  font-size: 14px;
+}
+.addtocart .content .instructions ol li {
+  font-size: 14px;
+}
+.addtocart .content .note {
+  margin: 20px 0;
+}
+.addtocart .content .note p {
+  font-weight: 600;
+}
+.addtocart .content .note p span {
+  font-weight: 400;
+}
+.addtocart .content .note p.notice {
+  padding-left: 15px;
+  font-weight: 400;
+  border-left: 5px solid #70a5bf;
 }/*# sourceMappingURL=style.css.map */

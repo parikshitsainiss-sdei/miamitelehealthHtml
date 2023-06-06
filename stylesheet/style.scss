@@ -1,6 +1,72 @@
 body {
   font-family: "Century Gothic", sans-serif !important;
 }
+
+.btn-main {
+  background-color: #70a5bf !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  padding: 8px 0 !important;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.btn-outline {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  border: 1px solid #000000 !important;
+  padding: 8px 0 !important;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.form-check-input {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.form-check-input:checked {
+  background-color: #70a5bf !important;
+  border-color: #70a5bf !important;
+}
+
+.stepField {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"] {
+    margin: 5px 0 15px !important;
+    font-weight: 500;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  label {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    i {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      color: #70a5bf;
+      border: 1px solid #70a5bf;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 .authPage {
   height: 100%;
   .authImage {
@@ -83,18 +149,93 @@ body {
         z-index: -1;
       }
     }
+  }
+}
 
-    .btn-main {
-      background-color: #70a5bf;
-      color: #ffffff;
-      font-weight: 500;
-      padding: 8px 0;
-    }
-    .btn-outline {
+.addtocart {
+  .content {
+    padding: 50px 0;
+    max-width: 420px;
+    margin: auto;
+    h4 {
       color: #000000;
-      font-weight: 500;
-      border: 1px solid #000000;
-      padding: 8px 0;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 600;
+      a {
+        color: #70a5bf;
+      }
+    }
+    h1 {
+      font-size: 28px;
+      color: #70a5bf;
+      font-weight: 600;
+      text-align: center;
+    }
+    p {
+      color: #000000;
+      span {
+        font-weight: 600;
+      }
+    }
+    .sponcers {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 30px 0;
+    }
+    .designatedDoctor {
+      .drProfile {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 20px auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      p {
+        color: #707070;
+      }
+    }
+    .agreement {
+      font-size: 14px;
+      text-align: center;
+    }
+    .resend {
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: #70a5bf;
+      }
+    }
+    .instructions {
+      p {
+        font-size: 14px;
+      }
+      ol {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+    .note {
+      margin: 20px 0;
+      p {
+        font-weight: 600;
+        span {
+          font-weight: 400;
+        }
+      }
+      p.notice {
+        padding-left: 15px;
+        font-weight: 400;
+        border-left: 5px solid #70a5bf;
+      }
     }
   }
 }
