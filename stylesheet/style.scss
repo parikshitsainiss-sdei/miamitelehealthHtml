@@ -237,5 +237,17 @@ body {
         border-left: 5px solid #70a5bf;
       }
     }
+    .gender {
+      display: flex;
+      border: 1px solid #ced4da;
+      padding: 4px 10px;
+      border-radius: 4px;
+      .form-check {
+        width: 100%;
+        i {
+          font-size: 15px;
+        }
+      }
+    }
   }
 }

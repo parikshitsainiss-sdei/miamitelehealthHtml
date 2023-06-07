@@ -224,4 +224,16 @@ body {
   padding-left: 15px;
   font-weight: 400;
   border-left: 5px solid #70a5bf;
+}
+.addtocart .content .gender {
+  display: flex;
+  border: 1px solid #ced4da;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.addtocart .content .gender .form-check {
+  width: 100%;
+}
+.addtocart .content .gender .form-check i {
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
