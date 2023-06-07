@@ -5,7 +5,7 @@ body {
 .btn-main {
   background-color: #70a5bf !important;
   color: #ffffff !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   padding: 8px 0 !important;
 }
 .btn-main:hover {
@@ -17,12 +17,13 @@ body {
 
 .btn-outline {
   color: #000000 !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   border: 1px solid #000000 !important;
   padding: 8px 0 !important;
 }
 .btn-outline:hover {
   opacity: 0.9;
+  background-color: #ced4da;
 }
 .btn-outline:focus {
   box-shadow: none !important;
@@ -147,6 +148,34 @@ body {
   z-index: -1;
 }
 
+.btn-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.btn-pair .btn {
+  width: 100%;
+}
+
+.modal-dialog .modal-content {
+  border-radius: 15px;
+}
+.modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-dialog .modal-content .modal-body {
+  padding-top: 0;
+  font-weight: 600;
+}
+.modal-dialog .modal-content .modal-body ul {
+  list-style: none;
+}
+.modal-dialog .modal-content .modal-body ul li {
+  margin: 10px 0;
+}
+
 .addtocart .content {
   padding: 50px 0;
   max-width: 420px;
@@ -236,4 +265,44 @@ body {
 }
 .addtocart .content .gender .form-check i {
   font-size: 15px;
+}
+.addtocart .content .patientDetails {
+  position: relative;
+}
+.addtocart .content .patientDetails .form-check {
+  width: 100%;
+  padding-left: 0;
+}
+.addtocart .content .patientDetails .form-check .form-check-label {
+  border: 1px solid #ced4da;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.addtocart .content .patientDetails .form-check-input {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.addtocart .content .patientDetails .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #70a5bf;
+  border: 1px solid #70a5bf;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.addtocart .content .patientDetails textarea {
+  margin: 5px 0;
+}
+.addtocart .content .patientDetails textarea:focus {
+  box-shadow: none !important;
 }/*# sourceMappingURL=style.css.map */
