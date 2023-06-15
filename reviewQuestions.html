@@ -28,29 +28,123 @@
     <section class="reviewPage">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col pageTitle">
             <h2>Review Your Questionnaire</h2>
+            <p>
+              Make sure to review questions marked in red with a
+              <span>?</span> icon before continuing.
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-12 Question">
             <h3>Parental Consent</h3>
-            <h4>Are you at least 18 years old?</h4>
-            4
-            <p>Yes, I am over 18.</p>
+            <h4 class="questionTitle">Are you at least 18 years old?</h4>
+
+            <p class="answer">Yes, I am over 18.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
+          <div class="col-12 Question">
+            <h3>Gender</h3>
+            <h4 class="questionTitle">What is your biological sex?</h4>
+
+            <p class="answer">Male</p>
+          </div>
+          <div class="col-12 Question">
             <h3>Medical History</h3>
             <div class="EditBox">
-              <h4>
+              <h4 class="questionTitle">
                 Do you have any medical conditions that your provider should
                 know of?
               </h4>
               <a href="">Edit</a>
             </div>
-            <p>Yes, I am over 18.</p>
+            <p class="answer">Yes, I am over 18.</p>
+          </div>
+          <div class="col-12 Question">
+            <div class="EditBox">
+              <h4 class="questionTitle">
+                Please list them and your reactions to them.
+              </h4>
+              <a href="">Edit</a>
+            </div>
+            <p class="answer">test</p>
+          </div>
+          <div class="col-12 Question redQuestion">
+            <div class="EditBox">
+              <h4 class="questionTitle">
+                Did any family member experience the heart attack before the age
+                of 50?
+              </h4>
+              <a href="">Edit</a>
+            </div>
+            <p class="answer">
+              Yes, before 50
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="A medical history of blood clots is not advised to be used with this medication. This condition has been flagged as having links to potential risks of blood clots."
+                >?</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="noteText">
+              All information must be
+              <span>accurate</span> and
+              <span>correspond to the patient under treatment.</span>
+            </h3>
+            <button
+              class="btn btn-main w-100 mt-3"
+              data-bs-toggle="modal"
+              data-bs-target="#PotentialRisks"
+            >
+              Confirm & Continue
+            </button>
+          </div>
+        </div>
+
+        <!-- Verify medication's name Modal  -->
+        <div
+          class="modal fade"
+          id="PotentialRisks"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body px-4 pb-4">
+                <h4 class="text-center fw-bold">
+                  Potential Risks For The Spot Pill
+                </h4>
+                <p>
+                  One or more items in your medical questionnaire have been
+                  marked as having potential risks with The Spot Pill.
+                </p>
+                <p>
+                  You may continue with your order, but your prescription may be
+                  rejected by your doctor based on your condition. If rejected,
+                  the $20 doctor visit fee is not refundable.
+                </p>
+
+                <button class="btn btn-main w-100">
+                  Remove The Spot Pill & Continue
+                </button>
+                <div class="text-center mt-4">
+                  <a href="">Continue With The Spot Pill</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
