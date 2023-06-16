@@ -11,6 +11,14 @@ img {
   justify-content: $justify;
 }
 
+@mixin roundShape($width, $height, $bgColor) {
+  width: $width;
+  height: $height;
+  background-color: $bgColor;
+  @include itemPosition(center, center);
+  border-radius: 50%;
+}
+
 @mixin ratings($r_justify) {
   display: flex;
   align-items: center;
@@ -812,6 +820,10 @@ img {
     }
   }
   .ProductPopup {
+    &.modal {
+      top: 65px;
+      border-radius: 15px 15px 0 0;
+    }
     .modal-body {
       position: relative;
       padding: 0;
@@ -820,9 +832,12 @@ img {
       }
 
       .closeBtn {
-        position: absolute;
-        right: 10px;
-        top: 10px;
+        position: fixed;
+        right: 38px;
+        top: 84px;
+        i {
+          font-size: 20px;
+        }
       }
       .topBanner {
         background-color: rgba($color: #70a5bf, $alpha: 0.08);
@@ -846,6 +861,7 @@ img {
             }
             h3 {
               border-bottom: 2px solid #000000;
+              display: inline-block;
               a {
                 font-size: 20px;
                 color: #000000;
@@ -909,6 +925,193 @@ img {
           }
         }
       }
+      .formulations {
+        padding-bottom: 70px;
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .accordion {
+          .accordion-item {
+            border-top: 1px solid #b8b8b8;
+            border-bottom: 1px solid #b8b8b8;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            .accordion-header {
+              .accordion-button {
+                background-color: transparent !important;
+                font-weight: 600;
+                &:not(.collapsed) {
+                  color: #000000;
+                }
+                &:not(.collapsed)::after {
+                  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+                }
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+            }
+            .accordion-body {
+              p {
+                color: #707070;
+              }
+              ul {
+                list-style: disc;
+                li {
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+      .getitEasy {
+        padding: 70px 0;
+        background-color: rgba($color: #70a5bf, $alpha: 0.07);
+        .content {
+          text-align: center;
+          max-width: 230px;
+          @include itemPosition(center, center);
+          gap: 25px;
+          flex-direction: column;
+          margin: auto;
+          .numberBox {
+            @include roundShape(40px, 40px, #000000);
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+          }
+          i {
+            font-size: 80px;
+            color: #70a5bf;
+          }
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+      .comparison {
+        padding: 50px 0;
+        ul {
+          list-style: none;
+          li {
+            @include itemPosition(center, space-between);
+            margin: 0;
+            &:not(:first-child) {
+              border-top: 1px solid rgba($color: #707070, $alpha: 0.1);
+            }
+            span {
+              &:not(:last-child) {
+                border-right: 1px solid rgba($color: #707070, $alpha: 0.1);
+              }
+              padding: 20px;
+              display: inline-block;
+              display: flex;
+              align-items: center;
+              flex: 1;
+              height: 50px;
+              &.points {
+                justify-content: flex-start;
+                font-weight: 600;
+              }
+              &.inUklera {
+                justify-content: center;
+                color: #70a5bf;
+                img {
+                  width: 100px;
+                }
+                font-size: 20px;
+                font-weight: 600;
+              }
+              &.inOther {
+                justify-content: center;
+                color: #707070;
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+      .Hydroquinone {
+        padding-bottom: 70px;
+        .content {
+          @include itemPosition(flex-start, flex-start);
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+      .reviewTopSection {
+        border-bottom: 5px solid #70707081;
+        margin: 50px 0;
+        h1 {
+          text-align: center;
+        }
+        p {
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+        }
+        .review {
+          @include ratings(center);
+          margin: 30px 0;
+          .count {
+            font-weight: 600;
+            font-size: 25px;
+          }
+          .stars {
+            i {
+              font-size: 25px;
+            }
+          }
+        }
+        a {
+          color: #707070;
+          text-align: center;
+          display: block;
+          margin-bottom: 60px;
+        }
+      }
+      p.name {
+        font-weight: 600;
+        color: #707070;
+      }
+      p.productName {
+        font-weight: 600;
+      }
+      .verify {
+        position: relative;
+        color: #0b8900;
+        font-weight: 600;
+        .fa-certificate {
+          font-size: 20px;
+          color: #0b8900;
+        }
+        .fa-check {
+          position: absolute;
+          top: 5px;
+          color: #ffffff;
+          left: 6px;
+          font-size: 10px;
+        }
+      }
+      .rating {
+        @include ratings(flex-start);
+      }
+      .reviewFeedback {
+        margin: 40px 0;
+        .text {
+          @include itemPosition(center, flex-end);
+          gap: 15px;
+          border-bottom: 1px solid #707070;
+          padding-bottom: 40px;
+          p {
+            color: #707070;
+          }
+        }
+      }
     }
   }
 }
@@ -951,6 +1154,84 @@ img {
           i {
             transform: rotate(90deg);
             font-size: 25px;
+          }
+        }
+      }
+    }
+    .ProductPopup {
+      .modal-body {
+        h1.pageTitle {
+          font-size: 30px;
+        }
+        .topBanner {
+          .image {
+            img {
+              max-width: 50%;
+            }
+          }
+          .centerstart {
+            justify-content: center;
+            padding: 40px 0;
+            .content {
+              text-align: center;
+              margin-top: 30px;
+            }
+          }
+        }
+
+        .freshIngredients {
+          .content {
+            width: auto;
+            margin: 20px 0;
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .comparison {
+          padding: 50px 0;
+          ul {
+            list-style: none;
+            li {
+              @include itemPosition(center, space-between);
+              margin: 0;
+              &:not(:first-child) {
+                border-top: 1px solid rgba($color: #707070, $alpha: 0.1);
+              }
+              span {
+                &:not(:last-child) {
+                  border-right: 1px solid rgba($color: #707070, $alpha: 0.1);
+                }
+                padding: 0px;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                flex: 1;
+                height: 30px;
+                &.points {
+                  justify-content: flex-start;
+                  font-weight: 600;
+                  font-size: 10px;
+                }
+                &.inUklera {
+                  justify-content: center;
+                  color: #70a5bf;
+                  img {
+                    width: 50px;
+                  }
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+                &.inOther {
+                  justify-content: center;
+                  color: #707070;
+                  font-size: 12px;
+                  font-weight: 600;
+                  text-align: center;
+                }
+              }
+            }
           }
         }
       }
