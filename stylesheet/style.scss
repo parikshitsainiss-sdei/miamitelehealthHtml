@@ -1116,6 +1116,141 @@ img {
   }
 }
 
+.mediacalProfile {
+  .content {
+    padding: 70px 0;
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      @include itemPosition(center, flex-start);
+      gap: 10px;
+      i {
+        @include roundShape(40px, 40px, #70a5bf);
+        color: #fff;
+      }
+    }
+    .patientInfoBox {
+      margin-top: 50px;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p.notice {
+        color: #ec0e1d;
+        a {
+          font-weight: 600;
+          color: #ec0e1d;
+        }
+      }
+    }
+    .dataBox {
+      border-bottom: 1px solid #ced4da;
+      padding: 20px 0;
+      label {
+        font-weight: 600;
+      }
+      input[type="text"] {
+        background-color: #fff;
+        border: none;
+        font-weight: 600;
+      }
+      .patientInfo {
+        .labelBox {
+          @include itemPosition(center, space-between);
+          a {
+            color: #fff;
+            background-color: #426c81;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+          }
+        }
+        .doneCancel {
+          a {
+            color: #426c81;
+            margin-right: 10px;
+          }
+        }
+      }
+      .btnBox {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.messageCenter {
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .content {
+    padding: 70px 0 50px;
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      @include itemPosition(center, flex-start);
+      gap: 10px;
+      i {
+        @include roundShape(40px, 40px, #70a5bf);
+        color: #fff;
+      }
+    }
+  }
+  .support {
+    box-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    i {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+    .bg-lightRed {
+      background-color: #fdf5f7;
+      border-radius: 10px 0 0 10px;
+    }
+    .bg-lightBlue {
+      background-color: #f4f9f9;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+  button {
+    border-radius: 10px;
+    box-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+.privacy {
+  .privacymainBox {
+    background-image: url("../assets/3c1d4c16-3cbc-4248-ab7e-79557cfb746b.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    h1 {
+      color: #fff;
+      font-weight: 900;
+      margin-top: 70px;
+    }
+    .btnBox {
+      @include itemPosition(center, center);
+      gap: 15px;
+    }
+  }
+  .nav-pills {
+    .nav-item {
+      .nav-link {
+        color: #70a5bf;
+        &.active {
+          background-color: #70a5bf;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .checkout {
     .pageTitle {

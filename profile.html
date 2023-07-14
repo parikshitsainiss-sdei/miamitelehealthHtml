@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/century-gothic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="mediacalProfile">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="content">
+              <h1><i class="fa-solid fa-chevron-left"></i> Medical Profile</h1>
+
+              <div class="patientInfoBox">
+                <h3>DOCTOR - PATIENT INFO</h3>
+                <p>
+                  This is what your doctor will see next time you consult with
+                  them.
+                </p>
+
+                <p class="notice">
+                  Any updates on your profile will not guarantee changes to your
+                  future refills. It's recommended that you
+                  <a href="">message your doctor</a>
+                  when you make any changes and manage your refills accordingly.
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="dataBox">
+                    <div class="patientInfo">
+                      <label for="">Legal Name</label>
+                    </div>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control"
+                      value="N/A"
+                    />
+                  </div>
+                  <div class="dataBox">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="patientInfo">
+                          <label for="">Biological Sex</label>
+                        </div>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control"
+                          value="N/A"
+                        />
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="patientInfo">
+                          <label for="">Legal Birth Date</label>
+                        </div>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control"
+                          value="N/A"
+                        />
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="patientInfo">
+                          <label for="">Ethnicity</label>
+                        </div>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control"
+                          value="N/A"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dataBox">
+                    <div class="patientInfo">
+                      <div class="labelBox">
+                        <label for="">Pregnant or Nursing</label>
+                        <a href="">Edit</a>
+                      </div>
+                      <input type="text" class="form-control" value="N/A" />
+                    </div>
+                    <div class="checkBox">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Not pregnant/nursing
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Currently nursing
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault3"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault3">
+                          Currently pregnant
+                        </label>
+                      </div>
+                    </div>
+                    <div class="btnBox text-end">
+                      <button class="btn btn-main px-3">Save Changes</button>
+                      <button class="btn btn-outline px-3">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="dataBox">
+                    <div class="patientInfo">
+                      <div class="labelBox">
+                        <label for="">Skin or Drug Allergies</label>
+                        <a href="">Edit</a>
+                      </div>
+                      <input
+                        type="text"
+                        disabled
+                        class="form-control mt-2"
+                        value="N/A"
+                      />
+                      <div class="doneCancel my-2">
+                        <a href="">Done</a>
+                        <a href="">Cancel</a>
+                      </div>
+                    </div>
+                    <div class="addBtn">
+                      <button class="btn btn-outline px-3">
+                        + Add allergy
+                      </button>
+                    </div>
+                    <div class="btnBox text-end">
+                      <button class="btn btn-main px-3">Save Changes</button>
+                      <button class="btn btn-outline px-3">Cancel</button>
+                    </div>
+                  </div>
+                  <div class="dataBox">
+                    <div class="patientInfo">
+                      <div class="labelBox">
+                        <label for="">Skin-Related Issues</label>
+                        <a href="">Edit</a>
+                      </div>
+                      <input
+                        type="text"
+                        disabled
+                        class="form-control mt-2"
+                        value="N/A"
+                      />
+                      <div class="doneCancel my-2">
+                        <a href="">Done</a>
+                        <a href="">Cancel</a>
+                      </div>
+                    </div>
+                    <div class="addBtn">
+                      <button class="btn btn-outline px-3">
+                        + Add skin-related issue
+                      </button>
+                    </div>
+                    <div class="btnBox text-end">
+                      <button class="btn btn-main px-3">Save Changes</button>
+                      <button class="btn btn-outline px-3">Cancel</button>
+                    </div>
+                  </div>
+                  <div class="dataBox">
+                    <div class="patientInfo">
+                      <div class="labelBox">
+                        <label for="">Medical Conditions</label>
+                        <a href="">Edit</a>
+                      </div>
+                      <input
+                        type="text"
+                        disabled
+                        class="form-control mt-2"
+                        value="N/A"
+                      />
+                      <div class="doneCancel my-2">
+                        <a href="">Done</a>
+                        <a href="">Cancel</a>
+                      </div>
+                    </div>
+                    <div class="addBtn">
+                      <button class="btn btn-outline px-3">
+                        + Add medical condition
+                      </button>
+                    </div>
+                    <div class="btnBox text-end">
+                      <button class="btn btn-main px-3">Save Changes</button>
+                      <button class="btn btn-outline px-3">Cancel</button>
+                    </div>
+                  </div>
+                  <div class="dataBox">
+                    <div class="patientInfo">
+                      <div class="labelBox">
+                        <label for="">Medications/Supplements</label>
+                        <a href="">Edit</a>
+                      </div>
+                      <input
+                        type="text"
+                        disabled
+                        class="form-control mt-2"
+                        value="N/A"
+                      />
+                      <div class="doneCancel my-2">
+                        <a href="">Done</a>
+                        <a href="">Cancel</a>
+                      </div>
+                    </div>
+                    <div class="addBtn">
+                      <button class="btn btn-outline px-3">
+                        + Add medication/supplement
+                      </button>
+                    </div>
+                    <div class="btnBox text-end">
+                      <button class="btn btn-main px-3">Save Changes</button>
+                      <button class="btn btn-outline px-3">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
